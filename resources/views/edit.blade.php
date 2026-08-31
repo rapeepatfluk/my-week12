@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layouts.app')
 
 @section('title', 'ฟอร์มแก้ไขบทความ')
 @section('content')

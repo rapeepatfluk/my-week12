@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layouts.app')
 
 @section('title', 'หน้าแสดงบทความทั้งหมด')
 
@@ -41,7 +41,7 @@
                                 <a href="{{route('delete', $blog->id)}}" class="btn btn-danger" onclick="confirm('คุณต้องการลบบทความ {{ $blog->title }} นี้หรือไม่?')">ลบ</a>
                             </td>
                             <td>
-                                <a href="{{route('edit', $blog->id)}}" class="btn btn-primary">แก้ไขบทความ</a>
+                                <a href="{{route('edit', $blog->id)}}" class="btn btn-warning">แก้ไข</a>
                             </td>
                         </tr>
                     @endforeach

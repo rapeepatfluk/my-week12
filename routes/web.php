@@ -82,3 +82,7 @@ Route::post('/update/{id}', [AdminController::class, 'update'])->name('update');
 
 Route::get('/change/{id}', [AdminController::class, 'change'])->name('change');
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
